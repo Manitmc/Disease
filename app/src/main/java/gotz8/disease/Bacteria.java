@@ -14,6 +14,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -59,6 +60,30 @@ public class Bacteria extends Activity {
                 ,new String[] {"BAC_NAME_EN", "BAC_NAME_TH", "BAC_VACCINE","BAC_DATA"}
                 ,new int[] {R.id.BacNameEng, R.id.BacNameTH, R.id.BacVaccine,R.id.BACDT});
         listViewฺBacType.setAdapter(sAdap);
+        listViewฺBacType.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                //               String item = VirusList.get(i).get("VIR_NAME_EN");
+
+                String item2 =dirArray.get(i).get("BAC_NAME_EN");
+                String item3 =dirArray.get(i).get("BAC_DATA");
+
+                Intent intent = new Intent(Bacteria.this,BacData.class);
+
+                intent.putExtra("BAC_NAME_EN",item2);
+                intent.putExtra("BAC_DATA",item3);
+                startActivity(intent);
+
+/*
+                   Context context = getApplicationContext();
+                 int duration = Toast.LENGTH_SHORT;
+                   Toast toast = Toast.makeText(context, item, duration);
+                 toast.show();
+*/
+//                    ClickVirus();
+            }
+        });
     }
 
     public void onPause() {

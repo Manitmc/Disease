@@ -14,6 +14,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -61,7 +62,35 @@ public class Vaccine extends Activity {
                 ,new String[] {"VAC_NAME", "VAC_PRODUCT_DIS", "VAC_YEAR_PD"}
                 ,new int[] {R.id.VacName, R.id.VacProduct, R.id.VacYear});
         listViewVir.setAdapter(sAdap);
+        listViewVir.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                //               String item = VirusList.get(i).get("VIR_NAME_EN");
+
+                String item2 =dirArray.get(i).get("VAC_NAME");
+                String item3 =dirArray.get(i).get("VAC_MANUFACTURER");
+                String item4 =dirArray.get(i).get("VAC_TYPE");
+                String item5 =dirArray.get(i).get("VAC_DESCRIPTION");
+                Intent intent = new Intent(Vaccine.this,VaccineData.class);
+
+                intent.putExtra("VAC_NAME",item2);
+                intent.putExtra("VAC_MANUFACTURER",item3);
+                intent.putExtra("VAC_TYPE",item4);
+                intent.putExtra("VAC_DESCRIPTION",item5);
+                startActivity(intent);
+
+/*
+                   Context context = getApplicationContext();
+                 int duration = Toast.LENGTH_SHORT;
+                   Toast toast = Toast.makeText(context, item, duration);
+                 toast.show();
+*/
+//                    ClickVirus();
+            }
+        });
     }
+
 
     public void onPause() {
         super.onPause();
