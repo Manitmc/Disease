@@ -14,31 +14,31 @@
         android:layout_height="200dp"
 
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="27dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:onClick="ClickBac"
         android:src="@drawable/bac_btn"
         app:layout_constraintBottom_toTopOf="@+id/Treatment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintVertical_bias="0.507" />
 
     <ImageView
         android:id="@+id/Vaccine"
         android:layout_width="160dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="105dp"
         android:layout_marginLeft="8dp"
 
 
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="0dp"
 
 
         android:onClick="ClickVac"
         android:src="@drawable/vaccine_btn"
         app:layout_constraintBottom_toBottomOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintLeft_toRightOf="@+id/Treatment"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
@@ -50,7 +50,7 @@
         android:layout_width="160dp"
         android:layout_height="200dp"
         android:layout_marginBottom="105dp"
-        android:layout_marginLeft="27dp"
+        android:layout_marginLeft="16dp"
         android:onClick="ClickTreatment"
         android:src="@drawable/treatment_btn"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,8 +66,7 @@
         android:layout_height="200dp"
 
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="0dp"
 
 
         android:layout_marginTop="8dp"
@@ -75,9 +74,12 @@
         android:onClick="ClickVirus"
         android:src="@drawable/virus_btn"
         app:layout_constraintBottom_toTopOf="@+id/Vaccine"
-        app:layout_constraintLeft_toRightOf="@+id/bacteria"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bacteria"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintVertical_bias="0.503" />
 
 
 </android.support.constraint.ConstraintLayout>
