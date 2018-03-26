@@ -16,6 +16,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -24,17 +26,27 @@ public class Bacteria extends Activity {
     SQLiteDatabase mDb;
     MyDBHelper mHelper;
     Cursor mCursor;
-
+    Button finddis;
+    EditText search_dis;
+    String word_search;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_bac);
-
+        search_dis = (EditText) findViewById(R.id.bac_search);
+        finddis = (Button) findViewById(R.id.bac_btn);
         ListView listViewฺBacType = (ListView)findViewById(R.id.listViewฺBacType);
 
         mHelper = new MyDBHelper(this);
         mDb = mHelper.getWritableDatabase();
         mHelper.onUpgrade(mDb, 1, 1);
+        finddis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                word_search = search_dis.getText().toString();
+
+            }
+        });
 
         //mCursor = mDb.rawQuery("SELECT " + MyDBHelper.COL_NAME + ", "
         //        + MyDBHelper.COL_PIECE_PRICE + ", " + MyDBHelper.COL_CAKE_PRICE
