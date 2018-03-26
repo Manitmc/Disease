@@ -42,7 +42,7 @@ public class Source1 extends AppCompatActivity {
                 CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
                 builder.setToolbarColor(ContextCompat.getColor(Source1.this, R.color.colorTab1));
                 builder.setShowTitle(true);
-                builder.setActionButton(BitmapFactory.decodeResource(getResources(), R.drawable.arrow), "Share", Extension.createPendingShareIntent(Source1.this));
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(), R.drawable.arrow_s), "Share", Extension.createPendingShareIntent(Source1.this));
                 builder.build().launchUrl(Source1.this, Uri.parse(url1));
             }
         });
@@ -55,7 +55,7 @@ public class Source1 extends AppCompatActivity {
                 CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
                 builder.setToolbarColor(ContextCompat.getColor(Source1.this,R.color.colorPrimary));
                 builder.setShowTitle(true);
-                builder.setActionButton(BitmapFactory.decodeResource(getResources(),R.drawable.arrow),"Share", Extension.createPendingShareIntent(Source1.this));
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(),R.drawable.arrow_s),"Share", Extension.createPendingShareIntent(Source1.this));
                 builder.build().launchUrl(Source1.this, Uri.parse(url1));
             }
         });
@@ -67,7 +67,18 @@ public class Source1 extends AppCompatActivity {
                 CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
                 builder.setToolbarColor(ContextCompat.getColor(Source1.this,R.color.colorPrimary));
                 builder.setShowTitle(true);
-                builder.setActionButton(BitmapFactory.decodeResource(getResources(),R.drawable.arrow),"Share", Extension.createPendingShareIntent(Source1.this));
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(),R.drawable.arrow_s),"Share", Extension.createPendingShareIntent(Source1.this));
+                builder.build().launchUrl(Source1.this, Uri.parse(url3));
+            }
+        });
+        discon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String url3 = "http://www.nvi.go.th/";
+
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                builder.setToolbarColor(ContextCompat.getColor(Source1.this,R.color.colorPrimary));
+                builder.setShowTitle(true);
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(),R.drawable.arrow_s),"Share", Extension.createPendingShareIntent(Source1.this));
                 builder.build().launchUrl(Source1.this, Uri.parse(url3));
             }
         });
