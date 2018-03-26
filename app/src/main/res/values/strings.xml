@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DiseaseMonitorApp</string>
+    <string name="home_header">Disease Monitor</string>
+    <string name="dev">DEVELOPER</string>
+    <string name="diseasenew">DISEASE NEWS</string>
+    <string name="devcom">Rajamangala University of Technology Suvarnabhumi</string>
+    <string name="faculty">Faculty of Science and Technology</string>
+    <string name="devby">Develop by</string>
+    <string name="Major">Computer Science Major</string>
+    <string name="Devname1">Mr. Manit Dokmaithong</string>
+    <string name="Devname2">Mr. Noppadon Rujiwan</string>
+    <string name="Devmail1">Email : Manit11799@gmail.com</string>
+    <string name="Devmail2">Email : gotnpd12@gmail.com</string>
+    <string name="source">SOURCE</string>
+    <string name="srcby">แหล่งที่มา</string>
+    <string name="cdc">www.cdc.gov</string>
+    <string name="who">http://www.who.int/en/</string>
+    <string name="diseasesrc">https://ddc.moph.go.th/</string>
+    <string name="virus">VIRUS</string>
+    <string name="contact">CONTACT INFORMATION</string>
+    <string name="contactby">ข้อมูลการติดต่อ</string>
+    <string name="addcdc">Centers for Disease Control and Prevention, 1600 Clifton Road, Atlanta, GA 30329 USA</string>
+    <string name="Treatment">TREATMENT</string>
+    <string name="Bacteria">BACTERIA</string>
+    <string name="Vaccine">VACCINE</string>
+
+
+
+</resources>

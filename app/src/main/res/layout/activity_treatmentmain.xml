@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ceedf4"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="gotz8.disease.TreatmentMain">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/toolbarbacdata"
+            layout="@layout/toolbartreatment" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Treatment"
+        android:id="@+id/textViewvir1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="#ffffff"/>
+
+
+    <ImageView
+
+        android:id="@+id/imageView69"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:onClick="ClickTreatment"
+        android:layout_marginTop="7dp"
+
+
+        android:background="@drawable/arrowb1"
+        />
+    <LinearLayout
+        android:id="@+id/cont1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/container_toolbar2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+
+            android:id="@+id/imageView68"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="ClickTreatVirus"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/vir_c"
+            />
+
+        <ImageView
+
+            android:id="@+id/imageView70"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bac_c"
+            android:onClick="ClickTreatBac" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

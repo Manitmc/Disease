@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_source1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="gotz8.disease.Source1"
+    android:background="#fcf5d3">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarsource"
+            layout="@layout/toolbarsource" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/source"
+        android:id="@+id/textView22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textColor="#FFFFFF" />
+
+
+    <ImageView
+
+        android:id="@+id/imageView98"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginTop="7dp"
+        android:onClick="ClickSource"
+
+        app:srcCompat="@drawable/arrowb1"
+        android:contentDescription="@string/source" />
+    <TextView
+        android:text="@string/srcby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:foregroundGravity="center_vertical|center_horizontal|center"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/container_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line2"
+        android:layout_below="@+id/container_toolbar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/box_src"
+        >
+        <ImageView
+            android:id="@+id/cdcv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/cdclogo"
+            android:contentDescription="@string/cdc" />
+        <ImageView
+            android:id="@+id/who1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:layout_marginTop="25dp"
+            android:src="@drawable/whoo1"
+            android:contentDescription="@string/who" />
+        <ImageView
+            android:id="@+id/discon"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/diseasecon"
+            android:contentDescription="@string/who" />
+
+    </LinearLayout>
+</RelativeLayout>

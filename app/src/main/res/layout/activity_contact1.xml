@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gotz8.disease.Contact"
+    android:background="#dedefa">
+    <LinearLayout
+        android:id="@+id/ct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarcontact"
+            layout="@layout/toolbarcontact" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:id="@+id/textCon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/box_contact"
+        android:layout_below="@+id/textView33"
+        android:layout_alignLeft="@+id/imageView69"
+        android:layout_alignStart="@+id/imageView69">
+
+
+
+    <ImageView
+        android:id="@+id/imageView90"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cdcpp" />
+        <TextView
+            android:text="@string/addcdc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView41"
+            android:textColor="#fff971"
+            android:layout_marginTop="5dp"
+            android:foregroundGravity="center_vertical|center_horizontal|center"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:text="@string/contactby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:foregroundGravity="center_vertical|center_horizontal|center"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/ct"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+
+        android:id="@+id/imageView69"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:onClick="ClickContact"
+
+
+        app:srcCompat="@drawable/arrowb1" />
+    </RelativeLayout>
