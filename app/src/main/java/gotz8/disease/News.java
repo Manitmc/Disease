@@ -207,4 +207,6 @@ public class News extends AppCompatActivity {
         return str.toString();
     }
 
+
+
 }
