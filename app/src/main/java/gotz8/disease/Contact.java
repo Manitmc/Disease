@@ -43,7 +43,7 @@ public class Contact extends Activity {
 
     }
     public void ClickContact (View view) {
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }//ClickBackHome
 
 }

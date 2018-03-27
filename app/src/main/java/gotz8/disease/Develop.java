@@ -21,6 +21,8 @@ public class Develop extends AppCompatActivity {
 
 
     public void ClickDev (View view) {
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        //startActivity(new Intent(getApplicationContext(), MainActivity.class));
+
+        finish();
     }//ClickBackHome
 }

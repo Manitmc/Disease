@@ -89,7 +89,7 @@ public class Source1 extends AppCompatActivity {
 
 
     public void ClickSource(View view) {
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }//ClickBackHome
 
 }
