@@ -32,8 +32,8 @@ public class Source1 extends AppCompatActivity {
 
         final ImageView cdc = (ImageView) findViewById(R.id.cdcv);
         final ImageView who = (ImageView) findViewById(R.id.who1);
+        final ImageView nvi = (ImageView) findViewById(R.id.nvi);
         final ImageView discon = (ImageView) findViewById(R.id.discon);
-
 
         cdc.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -71,15 +71,15 @@ public class Source1 extends AppCompatActivity {
                 builder.build().launchUrl(Source1.this, Uri.parse(url3));
             }
         });
-        discon.setOnClickListener(new View.OnClickListener() {
+        nvi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String url3 = "http://www.nvi.go.th/";
+                String url4 = "http://www.nvi.go.th/";
 
                 CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
                 builder.setToolbarColor(ContextCompat.getColor(Source1.this,R.color.colorPrimary));
                 builder.setShowTitle(true);
                 builder.setActionButton(BitmapFactory.decodeResource(getResources(),R.drawable.arrow_s),"Share", Extension.createPendingShareIntent(Source1.this));
-                builder.build().launchUrl(Source1.this, Uri.parse(url3));
+                builder.build().launchUrl(Source1.this, Uri.parse(url4));
             }
         });
     }
