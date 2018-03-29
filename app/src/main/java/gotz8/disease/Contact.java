@@ -32,6 +32,10 @@ public class Contact extends Activity {
         final ImageView p3 =  findViewById(R.id.p3);
         final ImageView p4 =  findViewById(R.id.p4);
         final ImageView p5 =  findViewById(R.id.p5);
+        final ImageView w2 =  findViewById(R.id.w2);
+        final ImageView w3 =  findViewById(R.id.w3);
+        final ImageView w4 =  findViewById(R.id.w4);
+        final ImageView w5 =  findViewById(R.id.w5);
 
 
         p4.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +80,50 @@ public class Contact extends Activity {
                 builder.setShowTitle(true);
                 builder.setActionButton(BitmapFactory.decodeResource(getResources(), R.drawable.arrow_s), "Share", Extension.createPendingShareIntent(Contact.this));
                 builder.build().launchUrl(Contact.this, Uri.parse(url4));
+            }
+        });
+        w3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String url2 = "https://www.instagram.com/who/";
+
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                builder.setToolbarColor(ContextCompat.getColor(Contact.this, R.color.colorPrimary));
+                builder.setShowTitle(true);
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(), R.drawable.arrow_s), "Share", Extension.createPendingShareIntent(Contact.this));
+                builder.build().launchUrl(Contact.this, Uri.parse(url2));
+            }
+        });
+        w2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String url3 = "https://www.youtube.com/user/who?";
+
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                builder.setToolbarColor(ContextCompat.getColor(Contact.this, R.color.colorPrimary));
+                builder.setShowTitle(true);
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(), R.drawable.arrow_s), "Share", Extension.createPendingShareIntent(Contact.this));
+                builder.build().launchUrl(Contact.this, Uri.parse(url3));
+            }
+        });
+        w5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String url3 = "https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=who";
+
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                builder.setToolbarColor(ContextCompat.getColor(Contact.this, R.color.colorPrimary));
+                builder.setShowTitle(true);
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(), R.drawable.arrow_s), "Share", Extension.createPendingShareIntent(Contact.this));
+                builder.build().launchUrl(Contact.this, Uri.parse(url3));
+            }
+        });
+        w4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String url3 = "https://www.facebook.com/WHO";
+
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                builder.setToolbarColor(ContextCompat.getColor(Contact.this, R.color.colorPrimary));
+                builder.setShowTitle(true);
+                builder.setActionButton(BitmapFactory.decodeResource(getResources(), R.drawable.arrow_s), "Share", Extension.createPendingShareIntent(Contact.this));
+                builder.build().launchUrl(Contact.this, Uri.parse(url3));
             }
         });
 

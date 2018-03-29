@@ -17,7 +17,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:onClick="ClickBac"
-        android:src="@drawable/bac_btn"
+        android:src="@drawable/bac_ic"
         app:layout_constraintBottom_toTopOf="@+id/Treatment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,7 @@
 
 
         android:onClick="ClickVac"
-        android:src="@drawable/vaccine_btn"
+        android:src="@drawable/vaccine_ic"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintHorizontal_bias="0.514"
@@ -52,7 +52,7 @@
         android:layout_marginBottom="105dp"
         android:layout_marginLeft="16dp"
         android:onClick="ClickTreatment"
-        android:src="@drawable/treatment_btn"
+        android:src="@drawable/treatment_ic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_conversion_absoluteHeight="250dp"
@@ -72,7 +72,7 @@
         android:layout_marginTop="8dp"
         android:contentDescription="@string/virus"
         android:onClick="ClickVirus"
-        android:src="@drawable/virus_btn"
+        android:src="@drawable/vir_ic"
         app:layout_constraintBottom_toTopOf="@+id/Vaccine"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
